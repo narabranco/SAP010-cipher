@@ -1,10 +1,24 @@
 const cipher = {
-
 };
 export default cipher;
+
 document.getElementById("cifrar").addEventListener("click", encode);
 document.getElementById("decifrar").addEventListener("click", decode);
-document.getElementById("limpar").addEventListener("click", limpar);
+document.getElementById("limpar").addEventListener("click", limpar);  
+//alert("test");
+
+
+
+
+function encode() {
+  const string = document.getElementById("texto").value;
+  const offset = parseInt(document.getElementById("offset").value);
+  const result = cifrar(string, offset);
+
+  document.getElementById("result").innerHTML =
+    ("<h3 id='titulo2'>Mensagem cifrada:</h3>" +
+      "<textarea rows=5 cols=70>" + result + "</textarea><br>");
+}
 
 function cifrar(string, offset) {
   let newText = "";
@@ -26,13 +40,13 @@ function cifrar(string, offset) {
   return newText;
 }
 
-function encode() {
+function decode() {
   const string = document.getElementById("texto").value;
   const offset = parseInt(document.getElementById("offset").value);
-  const result = cifrar(string, offset);
+  const result = decifrar(string, offset);
 
   document.getElementById("result").innerHTML =
-    ("<h3 id='titulo2'>Mensagem cifrada:</h3>" +
+    ("<h3 id='titulo2'>Mensagem decifrada:</h3>" +
       "<textarea rows=5 cols=70>" + result + "</textarea><br>");
 }
 
@@ -54,16 +68,6 @@ function decifrar(string, offset) {
     }
   }
   return newText;
-}
-
-function decode() {
-  const string = document.getElementById("texto").value;
-  const offset = parseInt(document.getElementById("offset").value);
-  const result = decifrar(string, offset);
-
-  document.getElementById("result").innerHTML =
-    ("<h3 id='titulo2'>Mensagem decifrada:</h3>" +
-      "<textarea rows=5 cols=70>" + result + "</textarea><br>");
 }
 
 function limpar() {
