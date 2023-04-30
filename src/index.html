@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="src/style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <title>Caesar Cipher</title>
 </head>
+
 <body>
-  <div class="cabecalho">
+  <div id="cabecalho">    
     <h1>RobotCypher</h1>
     <h3>Criptografe suas senhas e mensagens com segurança.</h3>
   </div>
 
-  <div class="texto">
+  <div class="root">
     <h3 id="titulo1">Digite a mensagem:</h3>
-    <textarea rows="5" cols="70" id="texto" placeholder="Digite aqui sua mensagem"></textarea><br><br>
+    <textarea rows="5" cols="70" id="root" placeholder="Digite aqui sua mensagem"></textarea><br><br>
     <b>Deslocamento padrão de criptografia (offset): 5</b>
     <p>Para alterar, digite ou clique no campo a abaixo:</p>
     <input type="number" id="offset" value="5"><br><br>
-    <button onclick="encode('encode')" id="cifrar">Cifrar</button>
-    <button onclick="decode('decode')" id="decifrar">Decifrar</button>
+    <button onclick="click" id="cifrar">Cifrar</button>
+    <button onclick="click" id="decifrar">Decifrar</button>
   </div>
 
   <div id="result" class="result">
@@ -31,7 +33,8 @@
   <div class="rodape">
     <button onclick="limpar('limpar')" id="limpar">Limpar tudo</button>
   </div>
-  <script src="src/cipher.js"></script>
-  <script src="src/index.js" type="module"></script>
+  <script src="cipher.js"></script>
+  <script src="index.js" type="module"></script>
 </body>
+
 </html>

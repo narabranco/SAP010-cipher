@@ -3,7 +3,7 @@ body {
     font-family: sans-serif ;
  }
 
- .cabecalho{
+ #cabecalho{
      text-align: center;
      font-size: 20px;
      color: #f4f5f8;
@@ -16,7 +16,7 @@ body {
      text-align: center;
  }
  
- .texto {
+ .root {
      text-align: center;
      color: white;
      text-shadow: #0d3557 0.1em 0.1em 0.2em;
