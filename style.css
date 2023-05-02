@@ -3,12 +3,12 @@ body {
     font-family: sans-serif ;
  }
 
- .cabecalho{
+ #cabecalho{
      text-align: center;
      font-size: 20px;
      color: #f4f5f8;
      text-shadow: black 4px -1px;
-     /*text-shadow: black 2px -1px, white -1px 1px, black 2px 1px, white -1px -1px;*/
+     
  }
  
  #offset {
@@ -16,7 +16,7 @@ body {
      text-align: center;
  }
  
- .texto {
+ .root {
      text-align: center;
      color: white;
      text-shadow: #0d3557 0.1em 0.1em 0.2em;
