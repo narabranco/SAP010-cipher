@@ -17,12 +17,12 @@
 
   <div class="root">
     <h3 id="titulo1">Digite a mensagem:</h3>
-    <textarea rows="5" cols="70" id="root" placeholder="Digite aqui sua mensagem"></textarea><br><br>
+    <textarea rows="5" cols="70" id="textEncode" placeholder="Digite aqui sua mensagem"></textarea><br><br>
     <b>Deslocamento padrão de criptografia (offset): 5</b>
     <p>Para alterar, digite ou clique no campo a abaixo:</p>
     <input type="number" id="offset" value="5"><br><br>
-    <button onclick="click" id="cifrar">Cifrar</button>
-    <button onclick="click" id="decifrar">Decifrar</button>
+    <button id="cifrar">Cifrar</button>
+    <button id="decifrar">Decifrar</button>
   </div>
 
   <div id="result" class="result">
@@ -31,9 +31,9 @@
   </div>
 
   <div class="rodape">
-    <button onclick="limpar('limpar')" id="limpar">Limpar tudo</button>
+    <button id="limpar">Limpar tudo</button>
   </div>
-  <script src="cipher.js"></script>
+
   <script src="index.js" type="module"></script>
 </body>
 
