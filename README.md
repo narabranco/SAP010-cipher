@@ -56,5 +56,8 @@ Project Feedback:
 * [x] A interface será "implantada" usando o GitHub Pages.
 * [x] O README contém uma definição de produto.
 
+## Protótipo
+![alt text](src/img/prototipoCipher.png) 
+
 ## 5. Link do GitPages
 * https://narabranco.github.io/SAP010-cipher/
